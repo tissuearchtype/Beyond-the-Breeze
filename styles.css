@@ -1,0 +1,64 @@
+body {
+    background: url('normal.jpg') no-repeat center center/cover;
+    color: #ff9500;
+    font-family: 'Sans Serif', sans-serif;
+    text-align: center;
+    transition: background 1s ease-in-out;
+}
+
+.title-glow {
+    color: #ff4500;
+    text-shadow: 0 0 15px #ffae00;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+#search-box {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    background: linear-gradient(90deg, #ff4500, #ffae00);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#weather-info, #weekly-forecast, #suggestions-container, #fun-fact {
+    background-color: rgba(255, 69, 0, 0.1);
+    border: 2px solid #ff9500;
+    border-radius: 10px;
+    padding: 15px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 0 15px #ffae00;
+}
+
+#suggestions-container {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.suggestion-box {
+    background-color: rgba(255, 69, 0, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ff4500;
+}
+
+.forecast-day {
+    padding: 10px;
+    border: 1px solid #ffae00;
+    margin: 5px;
+    display: inline-block;
+}
